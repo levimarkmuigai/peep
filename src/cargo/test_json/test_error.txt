@@ -1,0 +1,49 @@
+{
+  "reason": "compiler-message",
+  "package_id": "path+file:///home/levi/Test/errors#0.1.0",
+  "manifest_path": "/home/levi/Test/errors/Cargo.toml",
+  "target": {
+    "kind": ["bin"],
+    "crate_types": ["bin"],
+    "name": "errors",
+    "src_path": "/home/levi/Test/errors/src/main.rs",
+    "edition": "2024",
+    "doc": true,
+    "doctest": false,
+    "test": true
+  },
+  "message": {
+    "rendered": "error[E0308]: mismatched types\n  --> src/main.rs:10:24\n   |\n10 |     let _number: i32 = \"I am not a number\";\n   |                  ---   ^^^^^^^^^^^^^^^^^^^ expected `i32`, found `&str`\n   |                  |\n   |                  expected due to this\n\n",
+    "level": "error",
+    "message": "mismatched types",
+    "code": {
+      "code": "E0308",
+      "explanation": "Expected type did not match the received type...\n\n(Truncated for readability)"
+    },
+    "spans": [
+        {
+            "file_name": "src/main.rs",
+            "byte_start": 285,
+            "byte_end": 304,
+            "line_start": 10,
+            "line_end": 10,
+            "column_start": 24,
+            "column_end": 43,
+            "is_primary": true,
+            "text": [
+                {
+                    "text": "    let _number: i32 = \"I am not a number\";",
+                    "highlight_start": 24,
+                "   highlight_end": 43
+                }
+            ],
+            "label": "expected `i32`, found `&str`",
+            "suggested_replacement": null,
+            "suggestion_applicability": null,
+            "expansion": null
+        }
+    ],
+    "children": []
+  }
+}
+

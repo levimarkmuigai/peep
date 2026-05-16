@@ -1,0 +1,45 @@
+{
+  "reason": "compiler-message",
+  "package_id": "path+file:///home/levi/Test/errors#0.1.0",
+  "manifest_path": "/home/levi/Test/errors/Cargo.toml",
+  "target": {
+    "kind": ["bin"],
+    "crate_types": ["bin"],
+    "name": "errors",
+    "src_path": "/home/levi/Test/errors/src/main.rs",
+    "edition": "2024",
+    "doc": true,
+    "doctest": false,
+    "test": true
+  },
+  "message": {
+    "rendered": "note: this error originates in the macro `vec`\n",
+    "level": "note",
+    "message": "this error originates in the macro `vec`",
+    "code": null,
+    "spans": [
+      {
+        "file_name": "src/main.rs",
+        "byte_start": 150,
+        "byte_end": 156,
+        "line_start": 12,
+        "line_end": 12,
+        "column_start": 5,
+        "column_end": 11,
+        "is_primary": true,
+        "text": [
+          {
+            "text": "    vec![]",
+            "highlight_start": 5,
+            "highlight_end": 11
+          }
+        ],
+        "label": null,
+        "suggested_replacement": null,
+        "suggestion_applicability": null,
+        "expansion": null
+      }
+    ],
+    "children": []
+  }
+}

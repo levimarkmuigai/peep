@@ -1,0 +1,87 @@
+{
+  "reason": "compiler-message",
+  "package_id": "path+file:///home/levi/Test/errors#0.1.0",
+  "manifest_path": "/home/levi/Test/errors/Cargo.toml",
+  "target": {
+    "kind": ["bin"],
+    "crate_types": ["bin"],
+    "name": "errors",
+    "src_path": "/home/levi/Test/errors/src/main.rs",
+    "edition": "2024",
+    "doc": true,
+    "doctest": false,
+    "test": true
+  },
+  "message": {
+    "rendered": "warning: unused variable: `unused_variable`\n --> src/main.rs:6:9\n  |\n6 |     let unused_variable = 100;\n  |         ^^^^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_unused_variable`\n  |\n  = note: `#[warn(unused_variables)]` on by default\n\n",
+    "level": "warning",
+    "message": "unused variable: `unused_variable`",
+    "code": {
+      "code": "unused_variables",
+      "explanation": null
+    },
+    "spans": [
+      {
+        "file_name": "src/main.rs",
+        "byte_start": 105,
+        "byte_end": 120,
+        "line_start": 6,
+        "line_end": 6,
+        "column_start": 9,
+        "column_end": 24,
+        "is_primary": true,
+        "text": [
+          {
+            "text": "    let unused_variable = 100;",
+            "highlight_start": 9,
+            "highlight_end": 24
+          }
+        ],
+        "label": null,
+        "suggested_replacement": null,
+        "suggestion_applicability": null,
+        "expansion": null
+      }
+    ],
+    "children": [
+      {
+        "message": "`#[warn(unused_variables)]` on by default",
+        "level": "note",
+        "code": null,
+        "spans": [],
+        "children": [],
+        "rendered": null
+      },
+      {
+        "message": "if this is intentional, prefix it with an underscore: `_unused_variable`",
+        "level": "help",
+        "code": null,
+        "spans": [
+          {
+            "file_name": "src/main.rs",
+            "byte_start": 105,
+            "byte_end": 120,
+            "line_start": 6,
+            "line_end": 6,
+            "column_start": 9,
+            "column_end": 24,
+            "is_primary": true,
+            "text": [
+              {
+                "text": "    let unused_variable = 100;",
+                "highlight_start": 9,
+                "highlight_end": 24
+              }
+            ],
+            "label": null,
+            "suggested_replacement": "_unused_variable",
+            "suggestion_applicability": "MachineApplicable",
+            "expansion": null
+          }
+        ],
+        "children": [],
+        "rendered": null
+      }
+    ]
+  }
+}
