@@ -6,5 +6,6 @@ pub mod tui;
 pub mod ui;
 
 fn main() {
-    println!("Hello, world!");
+    let diag_vec = cargo::runner::run();
+    println!("Here are the diagnostics: {:#?}", diag_vec);
 }
