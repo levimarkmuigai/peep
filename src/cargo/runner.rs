@@ -4,11 +4,11 @@ use std::{
 };
 
 use crate::{
-    cargo::parser::{Diagnostics, parse},
+    cargo::parser::{Diagnostic, parse},
     error::AppError,
 };
 
-pub fn run() -> Result<Vec<Diagnostics>, AppError> {
+pub fn run() -> Result<Vec<Diagnostic>, AppError> {
     let mut child = Command::new("cargo")
         .args(["check", "--message-format=json"])
         .stdout(Stdio::piped())
@@ -18,7 +18,7 @@ pub fn run() -> Result<Vec<Diagnostics>, AppError> {
     let stdout = child.stdout.take().ok_or(AppError::StdoutUnavailable)?;
     let reader = BufReader::new(stdout);
 
-    let diagnostics: Vec<Diagnostics> = reader
+    let diagnostics: Vec<Diagnostic> = reader
         .lines()
         .filter_map(|line| {
             let line = line.ok()?;

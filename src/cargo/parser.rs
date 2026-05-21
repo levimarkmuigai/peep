@@ -1,7 +1,7 @@
 use crate::error::AppError;
 
 #[derive(Clone, Debug)]
-pub struct Diagnostics {
+pub struct Diagnostic {
     pub line: Option<String>,
     pub level: String,
     pub file: Option<String>,
@@ -9,7 +9,7 @@ pub struct Diagnostics {
     pub explanation: Option<String>,
 }
 
-pub fn parse(j: &str) -> Result<Option<Diagnostics>, AppError> {
+pub fn parse(j: &str) -> Result<Option<Diagnostic>, AppError> {
     let json: serde_json::Value = serde_json::from_str(j)?;
 
     if json["reason"].as_str() != Some("compiler-message") {
@@ -40,7 +40,7 @@ pub fn parse(j: &str) -> Result<Option<Diagnostics>, AppError> {
             (None, None)
         };
 
-        Ok(Some(Diagnostics {
+        Ok(Some(Diagnostic {
             line,
             level,
             file,
