@@ -6,7 +6,7 @@ pub struct Diagnostic {
     pub level: String,
     pub file: Option<String>,
     pub code: Option<String>,
-    pub explanation: Option<String>,
+    pub message: String,
 }
 
 pub fn parse(j: &str) -> Result<Option<Diagnostic>, AppError> {
@@ -15,22 +15,24 @@ pub fn parse(j: &str) -> Result<Option<Diagnostic>, AppError> {
     if json["reason"].as_str() != Some("compiler-message") {
         Ok(None)
     } else {
-        let message = &json["message"];
+        let msg_block = &json["message"];
 
-        let level = message["level"]
+        let level = msg_block["level"]
             .as_str()
             .map(|v| v.to_string())
             .ok_or(AppError::ParseError("level missing".into()))?;
 
-        let code_block = &message["code"];
+        if level == "failure-note" {
+            return Ok(None);
+        }
+
+        let code_block = &msg_block["code"];
 
         let code = code_block["code"].as_str().map(|v| v.to_string());
 
-        let explanation = code_block["explanation"].as_str().map(|v| v.to_string());
+        let span = &msg_block["spans"][0];
 
-        let span = &message["spans"][0];
-
-        let (file, line) = if span["is_primary"] == true {
+        let (file, line) = if span["is_primary"].as_bool() == Some(true) {
             let file = span["file_name"].as_str().map(|v| v.to_string());
 
             let line = span["line_start"].as_u64().map(|v| v.to_string());
@@ -40,12 +42,17 @@ pub fn parse(j: &str) -> Result<Option<Diagnostic>, AppError> {
             (None, None)
         };
 
+        let message = msg_block["message"]
+            .as_str()
+            .map(|v| v.to_string())
+            .ok_or(AppError::ParseError("message missing".into()))?;
+
         Ok(Some(Diagnostic {
             line,
             level,
             file,
             code,
-            explanation,
+            message,
         }))
     }
 }
@@ -63,10 +70,7 @@ mod tests {
         assert_eq!(d.level, "error");
         assert_eq!(d.code.as_deref(), Some("E0308"));
         assert_eq!(d.file.as_deref(), Some("src/main.rs"));
-        assert_eq!(
-            d.explanation.as_deref(),
-            Some("Expected type did not match the received type...\n\n(Truncated for readability)")
-        );
+        assert_eq!(d.message, "mismatched types");
     }
 
     #[test]
@@ -78,7 +82,7 @@ mod tests {
         assert_eq!(d.level, "warning");
         assert_eq!(d.file.as_deref(), Some("src/main.rs"));
         assert_eq!(d.code.as_deref(), Some("unused_variables"));
-        assert_eq!(d.explanation, None);
+        assert_eq!(d.message, "unused variable: `unused_variable`");
     }
 
     #[test]
@@ -91,6 +95,6 @@ mod tests {
         assert_eq!(d.file.as_deref(), Some("src/main.rs"));
         assert_eq!(d.level, "note");
         assert_eq!(d.code, None);
-        assert_eq!(d.explanation, None);
+        assert_eq!(d.message, "this error originates in the macro `vec`");
     }
 }
