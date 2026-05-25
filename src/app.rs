@@ -4,7 +4,7 @@ use ratatui::widgets::TableState;
 use crate::{
     cargo::parser::Diagnostic,
     events::handler::{self, AppAction},
-    ui::tui::Tui,
+    ui::{layout, tui::Tui},
 };
 
 pub struct AppState {
@@ -39,7 +39,9 @@ impl AppState {
 
 pub fn run(mut state: AppState, terminal: &mut Tui) -> color_eyre::Result<()> {
     while !state.should_quit {
-        //terminal.draw(|frame| {})?;
+        terminal.draw(|frame| {
+            let (statsbar, table, details) = layout::areas(frame.area());
+        })?;
 
         let event = event::read()?;
         let action = handler::map_event(event);
