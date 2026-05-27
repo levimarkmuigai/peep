@@ -3,18 +3,12 @@ use ratatui::{
     layout::{Constraint, Rect},
     style::Style,
     text::{Line, Text},
-    widgets::{Block, Borders, Cell, Row, Table, TableState},
+    widgets::{Block, Borders, Cell, Row, Table},
 };
 
 use crate::{app::AppState, ui::theme::Theme};
 
-pub fn render_table(
-    frame: &mut Frame,
-    area: Rect,
-    state: &AppState,
-    table_state: &mut TableState,
-    theme: &Theme,
-) {
+pub fn render_table(frame: &mut Frame, area: Rect, state: &mut AppState, theme: &Theme) {
     let header = ["level", "code", "file", "line"]
         .into_iter()
         .map(Cell::from)
@@ -44,5 +38,5 @@ pub fn render_table(
         .highlight_symbol(Text::from(highlight_symbol))
         .highlight_spacing(ratatui::widgets::HighlightSpacing::Always);
 
-    frame.render_stateful_widget(t, area, table_state);
+    frame.render_stateful_widget(t, area, &mut state.table);
 }
