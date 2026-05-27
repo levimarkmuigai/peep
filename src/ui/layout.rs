@@ -2,7 +2,7 @@ use ratatui::layout::{Constraint, Layout, Rect};
 
 pub fn areas(area: Rect) -> (Rect, Rect, Rect) {
     let [statbar, table, details] = Layout::vertical([
-        Constraint::Length(1),
+        Constraint::Length(2),
         Constraint::Min(0),
         Constraint::Length(6),
     ])

@@ -9,13 +9,17 @@ use ratatui::{
 use crate::{app::AppState, ui::theme::Theme};
 
 pub fn render_statbar(frame: &mut Frame, area: Rect, state: &AppState, theme: &Theme) {
-    let [left, right] =
-        Layout::horizontal([Constraint::Min(0), Constraint::Length(20)]).areas(area);
+    let [left, right] = Layout::horizontal([Constraint::Length(6), Constraint::Min(0)]).areas(area);
 
     let title = Paragraph::new(Line::from(Span::styled(
         "PEEP",
         Style::new().fg(theme.app_title).bold(),
-    )));
+    )))
+    .block(
+        Block::default()
+            .borders(Borders::BOTTOM)
+            .border_style(Style::new().fg(theme.border)),
+    );
 
     frame.render_widget(title, left);
 
@@ -44,9 +48,9 @@ pub fn render_statbar(frame: &mut Frame, area: Rect, state: &AppState, theme: &T
         .block(
             Block::default()
                 .borders(Borders::BOTTOM)
-                .border_style(theme.border),
+                .border_style(Style::new().fg(theme.border)),
         )
-        .alignment(Alignment::Right);
+        .alignment(Alignment::Center);
 
     frame.render_widget(stats, right);
 }
