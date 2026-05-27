@@ -9,6 +9,17 @@ pub struct Diagnostic {
     pub message: String,
 }
 
+impl Diagnostic {
+    pub fn as_array(&self) -> [&str; 4] {
+        [
+            self.level.as_str(),
+            self.code.as_deref().unwrap_or(""),
+            self.file.as_deref().unwrap_or(""),
+            self.line.as_deref().unwrap_or(""),
+        ]
+    }
+}
+
 pub fn parse(j: &str) -> Result<Option<Diagnostic>, AppError> {
     let json: serde_json::Value = serde_json::from_str(j)?;
 
