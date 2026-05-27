@@ -2,7 +2,7 @@ use ratatui::{
     Frame,
     layout::Rect,
     style::{Modifier, Style},
-    widgets::{Block, Borders, Paragraph, Wrap},
+    widgets::{Block, Paragraph, Wrap},
 };
 
 use crate::{app::AppState, ui::theme::Theme};
@@ -18,8 +18,6 @@ pub fn render_details(frame: &mut Frame, area: Rect, state: &AppState, theme: &T
             let details = Paragraph::new(d.message.as_str())
                 .block(
                     Block::default()
-                        .borders(Borders::TOP)
-                        .border_style(theme.border)
                         .title(format!(" {} : {} ", file, line))
                         .title_style(theme.detail_title),
                 )
@@ -29,11 +27,6 @@ pub fn render_details(frame: &mut Frame, area: Rect, state: &AppState, theme: &T
         }
         None => {
             let details = Paragraph::new("No diagnostic selected")
-                .block(
-                    Block::default()
-                        .borders(Borders::TOP)
-                        .border_style(theme.border),
-                )
                 .style(Style::new().add_modifier(Modifier::DIM));
 
             frame.render_widget(details, area);
