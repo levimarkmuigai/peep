@@ -9,19 +9,19 @@ use ratatui::{
 use crate::{app::AppState, ui::theme::Theme};
 
 pub fn render_table(frame: &mut Frame, area: Rect, state: &mut AppState, theme: &Theme) {
-    let header = ["level", "code", "file", "line"]
+    let header = ["level", "line", "file", "code"]
         .into_iter()
         .map(Cell::from)
         .collect::<Row>()
         .height(1);
 
-    let rows = state.items.iter().map(|d| Row::new(d.as_array()).height(4));
+    let rows = state.items.iter().map(|d| Row::new(d.as_array()).height(2));
 
     let widths = [
-        Constraint::Length(9),
-        Constraint::Length(7),
-        Constraint::Min(12),
-        Constraint::Length(6),
+        Constraint::Length(10),
+        Constraint::Length(8),
+        Constraint::Length(17),
+        Constraint::Fill(1),
     ];
 
     let pointer = "▶ ";
