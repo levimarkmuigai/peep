@@ -7,7 +7,6 @@ pub mod layout;
 pub mod statbar;
 pub mod table;
 pub mod theme;
-pub mod tui;
 
 pub fn render(frame: &mut Frame, state: &mut AppState, theme: &Theme) {
     let (stat_area, table_area, detail_area) = layout::areas(frame.area());
