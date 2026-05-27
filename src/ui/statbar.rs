@@ -3,7 +3,7 @@ use ratatui::{
     layout::{Alignment, Constraint, Layout, Rect},
     style::Style,
     text::{Line, Span},
-    widgets::Paragraph,
+    widgets::{Block, Borders, Paragraph},
 };
 
 use crate::{app::AppState, ui::theme::Theme};
@@ -40,7 +40,13 @@ pub fn render_statbar(frame: &mut Frame, area: Rect, state: &AppState, theme: &T
         Span::styled(warning_text, Style::new().fg(theme.stats_warning).bold()),
     ])];
 
-    let stats = Paragraph::new(text).alignment(Alignment::Right);
+    let stats = Paragraph::new(text)
+        .block(
+            Block::default()
+                .borders(Borders::BOTTOM)
+                .border_style(theme.border),
+        )
+        .alignment(Alignment::Right);
 
     frame.render_widget(stats, right);
 }
