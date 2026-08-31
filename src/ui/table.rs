@@ -15,7 +15,7 @@ pub fn render_table(frame: &mut Frame, area: Rect, state: &mut AppState, theme: 
         .collect::<Row>()
         .height(1);
 
-    let rows = state.items.iter().map(|d| Row::new(d.as_array()).height(2));
+    let rows = state.items.iter().map(|r| Row::new(r.as_array()).height(2));
 
     let widths = [
         Constraint::Length(10),

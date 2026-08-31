@@ -1,12 +1,3131 @@
-   0.102373020s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: stale: changed "/home/levi/Projects/peep/src/ui/mod.rs"
-   0.102388347s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:           (vs) "/home/levi/Projects/peep/target/debug/.fingerprint/peep-e7691f230c3c3045/dep-bin-peep"
-   0.102412405s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1779467220, nanos: 502190584 } < FileTime { seconds: 1779507013, nanos: 52867329 }
-   0.102543565s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: fingerprint dirty for peep v0.1.0 (/home/levi/Projects/peep)/Check { test: false }/TargetInner { name: "peep", doc: true, ..: with_path("/home/levi/Projects/peep/src/main.rs", Edition2024) }
-   0.102555640s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/levi/Projects/peep/target/debug/.fingerprint/peep-e7691f230c3c3045/dep-bin-peep", reference_mtime: FileTime { seconds: 1779467220, nanos: 502190584 }, stale: "/home/levi/Projects/peep/src/ui/mod.rs", stale_mtime: FileTime { seconds: 1779507013, nanos: 52867329 } }))
-   0.110008851s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: stale: missing "/home/levi/Projects/peep/src/tui.rs"
-   0.110087527s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: fingerprint dirty for peep v0.1.0 (/home/levi/Projects/peep)/Check { test: true }/TargetInner { name: "peep", doc: true, ..: with_path("/home/levi/Projects/peep/src/main.rs", Edition2024) }
-   0.110098609s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(MissingFile("/home/levi/Projects/peep/src/tui.rs")))
+   0.269834023s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: fingerprint error for peep v0.1.0 (/home/levi/Projects/peep)/Check { test: false }/TargetInner { name: "peep", doc: true, ..: with_path("/home/levi/Projects/peep/src/main.rs", Edition2024) }
+   0.269866135s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/peep-da78d7034db5f7bd/bin-peep`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: __libc_start_main
+  16: <unknown>
+   0.271124850s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Check { test: false }/TargetInner { ..: lib_target("anyhow", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/src/lib.rs", Edition2021) }
+   0.271140869s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/anyhow-625b77f81c1ff383/lib-anyhow`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.271587307s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
+   0.271632886s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/anyhow-41ecdb49addfbf27/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.271877686s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for anyhow v1.0.102/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
+   0.271914305s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.272279998s  INFO prepare_target{force=false package_id=color-eyre v0.6.5 target="color_eyre"}: cargo::core::compiler::fingerprint: fingerprint error for color-eyre v0.6.5/Check { test: false }/TargetInner { ..: lib_target("color_eyre", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.5/src/lib.rs", Edition2018) }
+   0.272550209s  INFO prepare_target{force=false package_id=color-eyre v0.6.5 target="color_eyre"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/color-eyre-53e33a51e737092f/lib-color_eyre`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.273535209s  INFO prepare_target{force=false package_id=backtrace v0.3.76 target="backtrace"}: cargo::core::compiler::fingerprint: fingerprint error for backtrace v0.3.76/Check { test: false }/TargetInner { ..: lib_target("backtrace", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/backtrace-0.3.76/src/lib.rs", Edition2021) }
+   0.273605230s  INFO prepare_target{force=false package_id=backtrace v0.3.76 target="backtrace"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/backtrace-7be590606c98886c/lib-backtrace`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.274105327s  INFO prepare_target{force=false package_id=addr2line v0.25.1 target="addr2line"}: cargo::core::compiler::fingerprint: fingerprint error for addr2line v0.25.1/Check { test: false }/TargetInner { ..: lib_target("addr2line", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/addr2line-0.25.1/src/lib.rs", Edition2018) }
+   0.274124038s  INFO prepare_target{force=false package_id=addr2line v0.25.1 target="addr2line"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/addr2line-16d038d70d74eab3/lib-addr2line`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.274435438s  INFO prepare_target{force=false package_id=gimli v0.32.3 target="gimli"}: cargo::core::compiler::fingerprint: fingerprint error for gimli v0.32.3/Check { test: false }/TargetInner { ..: lib_target("gimli", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/gimli-0.32.3/src/lib.rs", Edition2018) }
+   0.274449230s  INFO prepare_target{force=false package_id=gimli v0.32.3 target="gimli"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/gimli-2f82da1930c4444e/lib-gimli`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.274717478s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint: fingerprint error for cfg-if v1.0.4/Check { test: false }/TargetInner { ..: lib_target("cfg_if", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cfg-if-1.0.4/src/lib.rs", Edition2018) }
+   0.274741609s  INFO prepare_target{force=false package_id=cfg-if v1.0.4 target="cfg_if"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/cfg-if-9743b53f8759540d/lib-cfg_if`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.275267996s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
+   0.275296782s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/libc-70debede71313193/lib-libc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.275772854s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.275792218s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/libc-e5d2a2c870327002/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.275929113s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for libc v0.2.186/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/build.rs", Edition2021) }
+   0.275945314s  INFO prepare_target{force=false package_id=libc v0.2.186 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.276192846s  INFO prepare_target{force=false package_id=miniz_oxide v0.8.9 target="miniz_oxide"}: cargo::core::compiler::fingerprint: fingerprint error for miniz_oxide v0.8.9/Check { test: false }/TargetInner { ..: lib_target("miniz_oxide", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/miniz_oxide-0.8.9/src/lib.rs", Edition2021) }
+   0.276208364s  INFO prepare_target{force=false package_id=miniz_oxide v0.8.9 target="miniz_oxide"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/miniz_oxide-ac28a7c91d90a78e/lib-miniz_oxide`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.276514207s  INFO prepare_target{force=false package_id=adler2 v2.0.1 target="adler2"}: cargo::core::compiler::fingerprint: fingerprint error for adler2 v2.0.1/Check { test: false }/TargetInner { ..: lib_target("adler2", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/adler2-2.0.1/src/lib.rs", Edition2021) }
+   0.276536431s  INFO prepare_target{force=false package_id=adler2 v2.0.1 target="adler2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/adler2-8b879978726a380d/lib-adler2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.276772036s  INFO prepare_target{force=false package_id=object v0.37.3 target="object"}: cargo::core::compiler::fingerprint: fingerprint error for object v0.37.3/Check { test: false }/TargetInner { ..: lib_target("object", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/object-0.37.3/src/lib.rs", Edition2018) }
+   0.276788145s  INFO prepare_target{force=false package_id=object v0.37.3 target="object"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/object-af6a4389572aa2b6/lib-object`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.277088722s  INFO prepare_target{force=false package_id=memchr v2.8.0 target="memchr"}: cargo::core::compiler::fingerprint: fingerprint error for memchr v2.8.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("memchr", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/memchr-2.8.0/src/lib.rs", Edition2021) }
+   0.277105425s  INFO prepare_target{force=false package_id=memchr v2.8.0 target="memchr"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/memchr-f602a3f2b3e401c4/lib-memchr`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.277546732s  INFO prepare_target{force=false package_id=object v0.37.3 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for object v0.37.3/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/object-0.37.3/build.rs", Edition2018) }
+   0.277571114s  INFO prepare_target{force=false package_id=object v0.37.3 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/object-51e4f82cc9d7cf72/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.277777397s  INFO prepare_target{force=false package_id=object v0.37.3 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for object v0.37.3/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/object-0.37.3/build.rs", Edition2018) }
+   0.277808377s  INFO prepare_target{force=false package_id=object v0.37.3 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.279294353s  INFO prepare_target{force=false package_id=rustc-demangle v0.1.27 target="rustc_demangle"}: cargo::core::compiler::fingerprint: fingerprint error for rustc-demangle v0.1.27/Check { test: false }/TargetInner { ..: lib_target("rustc_demangle", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustc-demangle-0.1.27/src/lib.rs", Edition2015) }
+   0.279395312s  INFO prepare_target{force=false package_id=rustc-demangle v0.1.27 target="rustc_demangle"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/rustc-demangle-cf99c1ea03cf539b/lib-rustc_demangle`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.279810624s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="color_spantrace"}: cargo::core::compiler::fingerprint: fingerprint error for color-spantrace v0.3.0/Check { test: false }/TargetInner { ..: lib_target("color_spantrace", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-spantrace-0.3.0/src/lib.rs", Edition2018) }
+   0.279825215s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="color_spantrace"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/color-spantrace-3b8da0ee41acaca9/lib-color_spantrace`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.280219329s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for color-spantrace v0.3.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-spantrace-0.3.0/build.rs", Edition2018) }
+   0.280231880s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/color-spantrace-d486fd85c2ffeb18/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.280345622s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for color-spantrace v0.3.0/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-spantrace-0.3.0/build.rs", Edition2018) }
+   0.280359213s  INFO prepare_target{force=false package_id=color-spantrace v0.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.280641112s  INFO prepare_target{force=false package_id=once_cell v1.21.4 target="once_cell"}: cargo::core::compiler::fingerprint: fingerprint error for once_cell v1.21.4/Check { test: false }/TargetInner { ..: lib_target("once_cell", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/once_cell-1.21.4/src/lib.rs", Edition2021) }
+   0.280658395s  INFO prepare_target{force=false package_id=once_cell v1.21.4 target="once_cell"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/once_cell-e82284bae4f4de2f/lib-once_cell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.280842150s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="owo_colors"}: cargo::core::compiler::fingerprint: fingerprint error for owo-colors v4.3.0/Check { test: false }/TargetInner { ..: lib_target("owo_colors", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owo-colors-4.3.0/src/lib.rs", Edition2021) }
+   0.280851686s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="owo_colors"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/owo-colors-34a674d459ac6692/lib-owo_colors`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.281114688s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for owo-colors v4.3.0/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owo-colors-4.3.0/build.rs", Edition2021) }
+   0.281123484s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/owo-colors-47ef77350d5ea943/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.281212524s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for owo-colors v4.3.0/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/owo-colors-4.3.0/build.rs", Edition2021) }
+   0.281226001s  INFO prepare_target{force=false package_id=owo-colors v4.3.0 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.281398965s  INFO prepare_target{force=false package_id=tracing-core v0.1.36 target="tracing_core"}: cargo::core::compiler::fingerprint: fingerprint error for tracing-core v0.1.36/Check { test: false }/TargetInner { ..: lib_target("tracing_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-core-0.1.36/src/lib.rs", Edition2018) }
+   0.281409516s  INFO prepare_target{force=false package_id=tracing-core v0.1.36 target="tracing_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/tracing-core-240219b99dd088fe/lib-tracing_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.281660595s  INFO prepare_target{force=false package_id=tracing-error v0.2.1 target="tracing_error"}: cargo::core::compiler::fingerprint: fingerprint error for tracing-error v0.2.1/Check { test: false }/TargetInner { ..: lib_target("tracing_error", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-error-0.2.1/src/lib.rs", Edition2018) }
+   0.281670500s  INFO prepare_target{force=false package_id=tracing-error v0.2.1 target="tracing_error"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/tracing-error-b45f5746e574b13e/lib-tracing_error`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.281939502s  INFO prepare_target{force=false package_id=tracing v0.1.44 target="tracing"}: cargo::core::compiler::fingerprint: fingerprint error for tracing v0.1.44/Check { test: false }/TargetInner { ..: lib_target("tracing", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-0.1.44/src/lib.rs", Edition2018) }
+   0.281952719s  INFO prepare_target{force=false package_id=tracing v0.1.44 target="tracing"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/tracing-bcbd0cabe4451089/lib-tracing`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.282227751s  INFO prepare_target{force=false package_id=pin-project-lite v0.2.17 target="pin_project_lite"}: cargo::core::compiler::fingerprint: fingerprint error for pin-project-lite v0.2.17/Check { test: false }/TargetInner { doc_scrape_examples: Disabled, ..: lib_target("pin_project_lite", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pin-project-lite-0.2.17/src/lib.rs", Edition2018) }
+   0.282242344s  INFO prepare_target{force=false package_id=pin-project-lite v0.2.17 target="pin_project_lite"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/pin-project-lite-506ebae92725b442/lib-pin_project_lite`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.282439429s  INFO prepare_target{force=false package_id=tracing-subscriber v0.3.23 target="tracing_subscriber"}: cargo::core::compiler::fingerprint: fingerprint error for tracing-subscriber v0.3.23/Check { test: false }/TargetInner { ..: lib_target("tracing_subscriber", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tracing-subscriber-0.3.23/src/lib.rs", Edition2018) }
+   0.282448741s  INFO prepare_target{force=false package_id=tracing-subscriber v0.3.23 target="tracing_subscriber"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/tracing-subscriber-1eb9f5b50c7a0f5b/lib-tracing_subscriber`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.282798393s  INFO prepare_target{force=false package_id=sharded-slab v0.1.7 target="sharded_slab"}: cargo::core::compiler::fingerprint: fingerprint error for sharded-slab v0.1.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sharded_slab", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sharded-slab-0.1.7/src/lib.rs", Edition2018) }
+   0.282808751s  INFO prepare_target{force=false package_id=sharded-slab v0.1.7 target="sharded_slab"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/sharded-slab-f97da7b8c1dd1d81/lib-sharded_slab`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.282980303s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint: fingerprint error for lazy_static v1.5.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("lazy_static", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/lib.rs", Edition2015) }
+   0.282989957s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/lazy_static-4a8175f2b9096e42/lib-lazy_static`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_main
+  22: <unknown>
+   0.283146012s  INFO prepare_target{force=false package_id=thread_local v1.1.9 target="thread_local"}: cargo::core::compiler::fingerprint: fingerprint error for thread_local v1.1.9/Check { test: false }/TargetInner { ..: lib_target("thread_local", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thread_local-1.1.9/src/lib.rs", Edition2021) }
+   0.283155511s  INFO prepare_target{force=false package_id=thread_local v1.1.9 target="thread_local"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/thread_local-2da9f0640913f25f/lib-thread_local`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.283414824s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="eyre"}: cargo::core::compiler::fingerprint: fingerprint error for eyre v0.6.12/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("eyre", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eyre-0.6.12/src/lib.rs", Edition2018) }
+   0.283425130s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="eyre"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/eyre-bfa55e071fcd014e/lib-eyre`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.283827232s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for eyre v0.6.12/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eyre-0.6.12/build.rs", Edition2018) }
+   0.283840497s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/eyre-9f6c4e8ee4b9e1f5/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.283939579s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for eyre v0.6.12/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/eyre-0.6.12/build.rs", Edition2018) }
+   0.283951422s  INFO prepare_target{force=false package_id=eyre v0.6.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.284132794s  INFO prepare_target{force=false package_id=indenter v0.3.4 target="indenter"}: cargo::core::compiler::fingerprint: fingerprint error for indenter v0.3.4/Check { test: false }/TargetInner { ..: lib_target("indenter", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indenter-0.3.4/src/lib.rs", Edition2018) }
+   0.284146278s  INFO prepare_target{force=false package_id=indenter v0.3.4 target="indenter"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/indenter-4b397232285bf097/lib-indenter`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.284318999s  INFO prepare_target{force=false package_id=crossterm v0.29.0 target="crossterm"}: cargo::core::compiler::fingerprint: fingerprint error for crossterm v0.29.0/Check { test: false }/TargetInner { ..: lib_target("crossterm", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/crossterm-0.29.0/src/lib.rs", Edition2021) }
+   0.284332280s  INFO prepare_target{force=false package_id=crossterm v0.29.0 target="crossterm"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/crossterm-c988adee6df7cbd9/lib-crossterm`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.284839431s  INFO prepare_target{force=false package_id=bitflags v2.11.1 target="bitflags"}: cargo::core::compiler::fingerprint: fingerprint error for bitflags v2.11.1/Check { test: false }/TargetInner { ..: lib_target("bitflags", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitflags-2.11.1/src/lib.rs", Edition2021) }
+   0.284853203s  INFO prepare_target{force=false package_id=bitflags v2.11.1 target="bitflags"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/bitflags-a0942f70e2a339d6/lib-bitflags`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.285039093s  INFO prepare_target{force=false package_id=derive_more v2.1.1 target="derive_more"}: cargo::core::compiler::fingerprint: fingerprint error for derive_more v2.1.1/Check { test: false }/TargetInner { ..: lib_target("derive_more", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-2.1.1/src/lib.rs", Edition2021) }
+   0.285052494s  INFO prepare_target{force=false package_id=derive_more v2.1.1 target="derive_more"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/derive_more-cd7bda9e723dad22/lib-derive_more`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.285254198s  INFO prepare_target{force=false package_id=derive_more-impl v2.1.1 target="derive_more_impl"}: cargo::core::compiler::fingerprint: fingerprint error for derive_more-impl v2.1.1/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("derive_more_impl", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-impl-2.1.1/src/lib.rs", Edition2021) }
+   0.285264122s  INFO prepare_target{force=false package_id=derive_more-impl v2.1.1 target="derive_more_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/derive_more-impl-8a4d46ec7b0f2776/lib-derive_more_impl`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.285512578s  INFO prepare_target{force=false package_id=convert_case v0.10.0 target="convert_case"}: cargo::core::compiler::fingerprint: fingerprint error for convert_case v0.10.0/Build/TargetInner { ..: lib_target("convert_case", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/convert_case-0.10.0/src/lib.rs", Edition2021) }
+   0.285521963s  INFO prepare_target{force=false package_id=convert_case v0.10.0 target="convert_case"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/convert_case-6f972f4a01bf1fde/lib-convert_case`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.285783027s  INFO prepare_target{force=false package_id=unicode-segmentation v1.13.2 target="unicode_segmentation"}: cargo::core::compiler::fingerprint: fingerprint dirty for unicode-segmentation v1.13.2/Build/TargetInner { ..: lib_target("unicode_segmentation", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-segmentation-1.13.2/src/lib.rs", Edition2018) }
+   0.285793966s  INFO prepare_target{force=false package_id=unicode-segmentation v1.13.2 target="unicode_segmentation"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.285981167s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
+   0.285994574s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/proc-macro2-074ceae5b62c8f2d/lib-proc_macro2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.286275123s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.286284429s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/proc-macro2-e9a9c1839fbfa397/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_main
+  22: <unknown>
+   0.286394468s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for proc-macro2 v1.0.106/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/build.rs", Edition2021) }
+   0.286405491s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.286538467s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint: fingerprint dirty for unicode-ident v1.0.24/Build/TargetInner { ..: lib_target("unicode_ident", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-ident-1.0.24/src/lib.rs", Edition2021) }
+   0.286558586s  INFO prepare_target{force=false package_id=unicode-ident v1.0.24 target="unicode_ident"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.286779026s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
+   0.286794244s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/quote-428ac6e6a7f470c8/lib-quote`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.287170567s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.287183741s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/quote-918dd484806d5e70/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_main
+  22: <unknown>
+   0.287275816s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for quote v1.0.45/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/build.rs", Edition2021) }
+   0.287289119s  INFO prepare_target{force=false package_id=quote v1.0.45 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.287451428s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
+   0.287460819s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/syn-e8544e1bed867084/lib-syn`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.287774240s  INFO prepare_target{force=false package_id=document-features v0.2.12 target="document_features"}: cargo::core::compiler::fingerprint: fingerprint error for document-features v0.2.12/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("document_features", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/document-features-0.2.12/lib.rs", Edition2018) }
+   0.287789328s  INFO prepare_target{force=false package_id=document-features v0.2.12 target="document_features"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/document-features-52bdce09654c6d0c/lib-document_features`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.287993233s  INFO prepare_target{force=false package_id=litrs v1.0.0 target="litrs"}: cargo::core::compiler::fingerprint: fingerprint dirty for litrs v1.0.0/Build/TargetInner { ..: lib_target("litrs", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/litrs-1.0.0/src/lib.rs", Edition2021) }
+   0.288006056s  INFO prepare_target{force=false package_id=litrs v1.0.0 target="litrs"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.288174475s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint: fingerprint error for mio v1.2.0/Check { test: false }/TargetInner { ..: lib_target("mio", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mio-1.2.0/src/lib.rs", Edition2021) }
+   0.288187586s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/mio-01f74f227b748779/lib-mio`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.289099451s  INFO prepare_target{force=false package_id=log v0.4.29 target="log"}: cargo::core::compiler::fingerprint: fingerprint error for log v0.4.29/Check { test: false }/TargetInner { ..: lib_target("log", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/log-0.4.29/src/lib.rs", Edition2021) }
+   0.289119654s  INFO prepare_target{force=false package_id=log v0.4.29 target="log"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/log-cc738f4d042740b6/lib-log`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.289452182s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot v0.12.5/Check { test: false }/TargetInner { ..: lib_target("parking_lot", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot-0.12.5/src/lib.rs", Edition2021) }
+   0.289471438s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/parking_lot-2fc832ef3ce48ab2/lib-parking_lot`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.289784239s  INFO prepare_target{force=false package_id=lock_api v0.4.14 target="lock_api"}: cargo::core::compiler::fingerprint: fingerprint error for lock_api v0.4.14/Check { test: false }/TargetInner { ..: lib_target("lock_api", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lock_api-0.4.14/src/lib.rs", Edition2021) }
+   0.289802308s  INFO prepare_target{force=false package_id=lock_api v0.4.14 target="lock_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/lock_api-0ebb2ea3bf18f127/lib-lock_api`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.290119457s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint: fingerprint error for scopeguard v1.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("scopeguard", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/scopeguard-1.2.0/src/lib.rs", Edition2015) }
+   0.290142744s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/scopeguard-6d8302f4f7eb5010/lib-scopeguard`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.290483510s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot_core v0.9.12/Check { test: false }/TargetInner { ..: lib_target("parking_lot_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/src/lib.rs", Edition2021) }
+   0.290501576s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/parking_lot_core-6acb149780c3aff9/lib-parking_lot_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.290953828s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot_core v0.9.12/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/build.rs", Edition2021) }
+   0.290977178s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/parking_lot_core-41a5d7bb3ccacd52/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.291167896s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for parking_lot_core v0.9.12/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/build.rs", Edition2021) }
+   0.291181477s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.291441251s  INFO prepare_target{force=false package_id=smallvec v1.15.1 target="smallvec"}: cargo::core::compiler::fingerprint: fingerprint error for smallvec v1.15.1/Check { test: false }/TargetInner { ..: lib_target("smallvec", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/smallvec-1.15.1/src/lib.rs", Edition2018) }
+   0.291453198s  INFO prepare_target{force=false package_id=smallvec v1.15.1 target="smallvec"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/smallvec-2e9f83b16d329c8e/lib-smallvec`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.291648652s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="rustix"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v1.1.4/Check { test: false }/TargetInner { ..: lib_target("rustix", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/src/lib.rs", Edition2021) }
+   0.291661949s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="rustix"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/rustix-b26fdceff590232a/lib-rustix`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.291956216s  INFO prepare_target{force=false package_id=linux-raw-sys v0.12.1 target="linux_raw_sys"}: cargo::core::compiler::fingerprint: fingerprint error for linux-raw-sys v0.12.1/Check { test: false }/TargetInner { ..: lib_target("linux_raw_sys", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/linux-raw-sys-0.12.1/src/lib.rs", Edition2021) }
+   0.291970247s  INFO prepare_target{force=false package_id=linux-raw-sys v0.12.1 target="linux_raw_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/linux-raw-sys-85f7b4679fb65654/lib-linux_raw_sys`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.292325276s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustix v1.1.4/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/build.rs", Edition2021) }
+   0.292338454s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/rustix-c4578eb29aed97ca/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.292455253s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustix v1.1.4/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustix-1.1.4/build.rs", Edition2021) }
+   0.292470137s  INFO prepare_target{force=false package_id=rustix v1.1.4 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.292706959s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="signal_hook"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook v0.3.18/Check { test: false }/TargetInner { ..: lib_target("signal_hook", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-0.3.18/src/lib.rs", Edition2018) }
+   0.292716899s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="signal_hook"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/signal-hook-965a398e92bfba75/lib-signal_hook`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.293027396s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook v0.3.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-0.3.18/build.rs", Edition2018) }
+   0.293036913s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/signal-hook-e4a9ac37e09a9ee9/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.293131839s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for signal-hook v0.3.18/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-0.3.18/build.rs", Edition2018) }
+   0.293198643s  INFO prepare_target{force=false package_id=signal-hook v0.3.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.293423243s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook-registry v1.4.8/Check { test: false }/TargetInner { ..: lib_target("signal_hook_registry", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-registry-1.4.8/src/lib.rs", Edition2015) }
+   0.293433778s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/signal-hook-registry-0930dd1520919c11/lib-signal_hook_registry`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.293711925s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint: fingerprint error for errno v0.3.14/Check { test: false }/TargetInner { ..: lib_target("errno", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/errno-0.3.14/src/lib.rs", Edition2018) }
+   0.293725445s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/errno-e9fd7917abce4001/lib-errno`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.293915331s  INFO prepare_target{force=false package_id=signal-hook-mio v0.2.5 target="signal_hook_mio"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook-mio v0.2.5/Check { test: false }/TargetInner { ..: lib_target("signal_hook_mio", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-mio-0.2.5/src/lib.rs", Edition2018) }
+   0.293924784s  INFO prepare_target{force=false package_id=signal-hook-mio v0.2.5 target="signal_hook_mio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/signal-hook-mio-1318967d63e92c53/lib-signal_hook_mio`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.294249910s  INFO prepare_target{force=false package_id=ratatui v0.30.0 target="ratatui"}: cargo::core::compiler::fingerprint: fingerprint error for ratatui v0.30.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("ratatui", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-0.30.0/src/lib.rs", Edition2024) }
+   0.294263808s  INFO prepare_target{force=false package_id=ratatui v0.30.0 target="ratatui"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ratatui-d42f6c60a4888c93/lib-ratatui`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.294718879s  INFO prepare_target{force=false package_id=instability v0.3.12 target="instability"}: cargo::core::compiler::fingerprint: fingerprint error for instability v0.3.12/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("instability", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/instability-0.3.12/src/lib.rs", Edition2021) }
+   0.294730475s  INFO prepare_target{force=false package_id=instability v0.3.12 target="instability"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/instability-51ccc2c6f131f546/lib-instability`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.294985976s  INFO prepare_target{force=false package_id=darling v0.23.0 target="darling"}: cargo::core::compiler::fingerprint: fingerprint error for darling v0.23.0/Build/TargetInner { ..: lib_target("darling", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/darling-0.23.0/src/lib.rs", Edition2021) }
+   0.294995554s  INFO prepare_target{force=false package_id=darling v0.23.0 target="darling"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/darling-4749a33caacf559f/lib-darling`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.295232136s  INFO prepare_target{force=false package_id=darling_core v0.23.0 target="darling_core"}: cargo::core::compiler::fingerprint: fingerprint error for darling_core v0.23.0/Build/TargetInner { ..: lib_target("darling_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/darling_core-0.23.0/src/lib.rs", Edition2021) }
+   0.295241637s  INFO prepare_target{force=false package_id=darling_core v0.23.0 target="darling_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/darling_core-3b5ea71bf7c1bfbf/lib-darling_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.295526249s  INFO prepare_target{force=false package_id=ident_case v1.0.1 target="ident_case"}: cargo::core::compiler::fingerprint: fingerprint dirty for ident_case v1.0.1/Build/TargetInner { name_inferred: true, ..: lib_target("ident_case", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ident_case-1.0.1/src/lib.rs", Edition2015) }
+   0.295536287s  INFO prepare_target{force=false package_id=ident_case v1.0.1 target="ident_case"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.295739064s  INFO prepare_target{force=false package_id=strsim v0.11.1 target="strsim"}: cargo::core::compiler::fingerprint: fingerprint dirty for strsim v0.11.1/Build/TargetInner { name_inferred: true, ..: lib_target("strsim", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strsim-0.11.1/src/lib.rs", Edition2015) }
+   0.295749955s  INFO prepare_target{force=false package_id=strsim v0.11.1 target="strsim"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.295908523s  INFO prepare_target{force=false package_id=darling_macro v0.23.0 target="darling_macro"}: cargo::core::compiler::fingerprint: fingerprint error for darling_macro v0.23.0/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("darling_macro", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/darling_macro-0.23.0/src/lib.rs", Edition2021) }
+   0.295918547s  INFO prepare_target{force=false package_id=darling_macro v0.23.0 target="darling_macro"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/darling_macro-36204cc72a0b7bc8/lib-darling_macro`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.296136173s  INFO prepare_target{force=false package_id=indoc v2.0.7 target="indoc"}: cargo::core::compiler::fingerprint: fingerprint dirty for indoc v2.0.7/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("indoc", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indoc-2.0.7/src/lib.rs", Edition2021) }
+   0.296145785s  INFO prepare_target{force=false package_id=indoc v2.0.7 target="indoc"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.296465673s  INFO prepare_target{force=false package_id=instability v0.3.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for instability v0.3.12/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/instability-0.3.12/build.rs", Edition2021) }
+   0.296475547s  INFO prepare_target{force=false package_id=instability v0.3.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/instability-f3fea7e5fc2b4fe7/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.296566432s  INFO prepare_target{force=false package_id=instability v0.3.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for instability v0.3.12/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/instability-0.3.12/build.rs", Edition2021) }
+   0.296580303s  INFO prepare_target{force=false package_id=instability v0.3.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.296731642s  INFO prepare_target{force=false package_id=ratatui-core v0.1.0 target="ratatui_core"}: cargo::core::compiler::fingerprint: fingerprint error for ratatui-core v0.1.0/Check { test: false }/TargetInner { ..: lib_target("ratatui_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-core-0.1.0/src/lib.rs", Edition2024) }
+   0.296741658s  INFO prepare_target{force=false package_id=ratatui-core v0.1.0 target="ratatui_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ratatui-core-aa874371b1cad584/lib-ratatui_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.297149433s  INFO prepare_target{force=false package_id=compact_str v0.9.0 target="compact_str"}: cargo::core::compiler::fingerprint: fingerprint error for compact_str v0.9.0/Check { test: false }/TargetInner { ..: lib_target("compact_str", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/compact_str-0.9.0/src/lib.rs", Edition2021) }
+   0.297160159s  INFO prepare_target{force=false package_id=compact_str v0.9.0 target="compact_str"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/compact_str-bd30d8cc266e268c/lib-compact_str`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.297537299s  INFO prepare_target{force=false package_id=castaway v0.2.4 target="castaway"}: cargo::core::compiler::fingerprint: fingerprint error for castaway v0.2.4/Check { test: false }/TargetInner { ..: lib_target("castaway", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/castaway-0.2.4/src/lib.rs", Edition2018) }
+   0.297547184s  INFO prepare_target{force=false package_id=castaway v0.2.4 target="castaway"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/castaway-28c38b684374ae18/lib-castaway`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.297735059s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="rustversion"}: cargo::core::compiler::fingerprint: fingerprint error for rustversion v1.0.22/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("rustversion", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.22/src/lib.rs", Edition2018) }
+   0.297745319s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="rustversion"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/rustversion-a4c592d410aa9a98/lib-rustversion`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.298087103s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustversion v1.0.22/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.22/build/build.rs", Edition2018) }
+   0.298097323s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/rustversion-e6da698a689f72b2/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: <unknown>
+  22: __libc_start_main
+  23: <unknown>
+   0.298190677s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for rustversion v1.0.22/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustversion-1.0.22/build/build.rs", Edition2018) }
+   0.298205116s  INFO prepare_target{force=false package_id=rustversion v1.0.22 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.298414473s  INFO prepare_target{force=false package_id=itoa v1.0.18 target="itoa"}: cargo::core::compiler::fingerprint: fingerprint error for itoa v1.0.18/Check { test: false }/TargetInner { ..: lib_target("itoa", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itoa-1.0.18/src/lib.rs", Edition2021) }
+   0.298424177s  INFO prepare_target{force=false package_id=itoa v1.0.18 target="itoa"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/itoa-cbc8e4e0c4cd2407/lib-itoa`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.298639969s  INFO prepare_target{force=false package_id=ryu v1.0.23 target="ryu"}: cargo::core::compiler::fingerprint: fingerprint error for ryu v1.0.23/Check { test: false }/TargetInner { ..: lib_target("ryu", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/src/lib.rs", Edition2021) }
+   0.298652717s  INFO prepare_target{force=false package_id=ryu v1.0.23 target="ryu"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ryu-7d465e1aa2f77d0f/lib-ryu`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.298829495s  INFO prepare_target{force=false package_id=static_assertions v1.1.0 target="static_assertions"}: cargo::core::compiler::fingerprint: fingerprint error for static_assertions v1.1.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("static_assertions", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/static_assertions-1.1.0/src/lib.rs", Edition2015) }
+   0.298839260s  INFO prepare_target{force=false package_id=static_assertions v1.1.0 target="static_assertions"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/static_assertions-b485c2e4c776b1b6/lib-static_assertions`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.299033677s  INFO prepare_target{force=false package_id=hashbrown v0.16.1 target="hashbrown"}: cargo::core::compiler::fingerprint: fingerprint error for hashbrown v0.16.1/Check { test: false }/TargetInner { ..: lib_target("hashbrown", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hashbrown-0.16.1/src/lib.rs", Edition2021) }
+   0.299047009s  INFO prepare_target{force=false package_id=hashbrown v0.16.1 target="hashbrown"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/hashbrown-322fa0c907a5ebca/lib-hashbrown`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.299383811s  INFO prepare_target{force=false package_id=allocator-api2 v0.2.21 target="allocator_api2"}: cargo::core::compiler::fingerprint: fingerprint error for allocator-api2 v0.2.21/Check { test: false }/TargetInner { ..: lib_target("allocator_api2", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/allocator-api2-0.2.21/src/lib.rs", Edition2018) }
+   0.299393774s  INFO prepare_target{force=false package_id=allocator-api2 v0.2.21 target="allocator_api2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/allocator-api2-dfcd407ab2cdfd3b/lib-allocator_api2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.299610776s  INFO prepare_target{force=false package_id=equivalent v1.0.2 target="equivalent"}: cargo::core::compiler::fingerprint: fingerprint error for equivalent v1.0.2/Check { test: false }/TargetInner { ..: lib_target("equivalent", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/equivalent-1.0.2/src/lib.rs", Edition2015) }
+   0.299624095s  INFO prepare_target{force=false package_id=equivalent v1.0.2 target="equivalent"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/equivalent-39256790d0109c25/lib-equivalent`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.299780045s  INFO prepare_target{force=false package_id=foldhash v0.2.0 target="foldhash"}: cargo::core::compiler::fingerprint: fingerprint error for foldhash v0.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("foldhash", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/foldhash-0.2.0/src/lib.rs", Edition2021) }
+   0.299789669s  INFO prepare_target{force=false package_id=foldhash v0.2.0 target="foldhash"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/foldhash-c0d4ef4b04479400/lib-foldhash`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.299995436s  INFO prepare_target{force=false package_id=itertools v0.14.0 target="itertools"}: cargo::core::compiler::fingerprint: fingerprint error for itertools v0.14.0/Check { test: false }/TargetInner { tested: false, benched: false, ..: lib_target("itertools", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/itertools-0.14.0/src/lib.rs", Edition2018) }
+   0.300006450s  INFO prepare_target{force=false package_id=itertools v0.14.0 target="itertools"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/itertools-9732bb9d013b1ee6/lib-itertools`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.300268245s  INFO prepare_target{force=false package_id=either v1.15.0 target="either"}: cargo::core::compiler::fingerprint: fingerprint error for either v1.15.0/Check { test: false }/TargetInner { ..: lib_target("either", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/either-1.15.0/src/lib.rs", Edition2021) }
+   0.300281452s  INFO prepare_target{force=false package_id=either v1.15.0 target="either"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/either-d4ed3a9aba3dc0f1/lib-either`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.300461974s  INFO prepare_target{force=false package_id=kasuari v0.4.12 target="kasuari"}: cargo::core::compiler::fingerprint: fingerprint error for kasuari v0.4.12/Check { test: false }/TargetInner { ..: lib_target("kasuari", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/kasuari-0.4.12/src/lib.rs", Edition2021) }
+   0.300474001s  INFO prepare_target{force=false package_id=kasuari v0.4.12 target="kasuari"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/kasuari-81c94c3118b51e64/lib-kasuari`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.300775950s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/Check { test: false }/TargetInner { ..: lib_target("thiserror", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/src/lib.rs", Edition2021) }
+   0.300789492s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="thiserror"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/thiserror-71aa78e208437860/lib-thiserror`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.301113254s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror v2.0.18/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
+   0.301122592s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/thiserror-130d16ee5417bd18/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_main
+  22: <unknown>
+   0.301218994s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for thiserror v2.0.18/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-2.0.18/build.rs", Edition2021) }
+   0.301231228s  INFO prepare_target{force=false package_id=thiserror v2.0.18 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.301441031s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint: fingerprint error for thiserror-impl v2.0.18/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("thiserror_impl", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/thiserror-impl-2.0.18/src/lib.rs", Edition2021) }
+   0.301451364s  INFO prepare_target{force=false package_id=thiserror-impl v2.0.18 target="thiserror_impl"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/thiserror-impl-086e5bc17da42200/lib-thiserror_impl`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.301681330s  INFO prepare_target{force=false package_id=lru v0.16.4 target="lru"}: cargo::core::compiler::fingerprint: fingerprint error for lru v0.16.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("lru", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lru-0.16.4/src/lib.rs", Edition2015) }
+   0.301690802s  INFO prepare_target{force=false package_id=lru v0.16.4 target="lru"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/lru-e4de275d9eef755b/lib-lru`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.301931667s  INFO prepare_target{force=false package_id=strum v0.27.2 target="strum"}: cargo::core::compiler::fingerprint: fingerprint error for strum v0.27.2/Check { test: false }/TargetInner { ..: lib_target("strum", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strum-0.27.2/src/lib.rs", Edition2021) }
+   0.301952599s  INFO prepare_target{force=false package_id=strum v0.27.2 target="strum"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/strum-ca0b41de6d1cfe66/lib-strum`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.302155874s  INFO prepare_target{force=false package_id=strum_macros v0.27.2 target="strum_macros"}: cargo::core::compiler::fingerprint: fingerprint error for strum_macros v0.27.2/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("strum_macros", ["proc-macro"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/strum_macros-0.27.2/src/lib.rs", Edition2021) }
+   0.302165831s  INFO prepare_target{force=false package_id=strum_macros v0.27.2 target="strum_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/strum_macros-8d6e7ea6380aef66/lib-strum_macros`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.302483864s  INFO prepare_target{force=false package_id=heck v0.5.0 target="heck"}: cargo::core::compiler::fingerprint: fingerprint dirty for heck v0.5.0/Build/TargetInner { name_inferred: true, ..: lib_target("heck", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/heck-0.5.0/src/lib.rs", Edition2021) }
+   0.302493622s  INFO prepare_target{force=false package_id=heck v0.5.0 target="heck"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.302636958s  INFO prepare_target{force=false package_id=unicode-segmentation v1.13.2 target="unicode_segmentation"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-segmentation v1.13.2/Check { test: false }/TargetInner { ..: lib_target("unicode_segmentation", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-segmentation-1.13.2/src/lib.rs", Edition2018) }
+   0.302646873s  INFO prepare_target{force=false package_id=unicode-segmentation v1.13.2 target="unicode_segmentation"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/unicode-segmentation-106aae3ede6aca33/lib-unicode_segmentation`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.302810077s  INFO prepare_target{force=false package_id=unicode-truncate v2.0.1 target="unicode_truncate"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-truncate v2.0.1/Check { test: false }/TargetInner { benched: false, ..: lib_target("unicode_truncate", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-truncate-2.0.1/src/lib.rs", Edition2018) }
+   0.302819670s  INFO prepare_target{force=false package_id=unicode-truncate v2.0.1 target="unicode_truncate"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/unicode-truncate-32088c867157757f/lib-unicode_truncate`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.303060842s  INFO prepare_target{force=false package_id=unicode-width v0.2.2 target="unicode_width"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-width v0.2.2/Check { test: false }/TargetInner { ..: lib_target("unicode_width", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-width-0.2.2/src/lib.rs", Edition2021) }
+   0.303070484s  INFO prepare_target{force=false package_id=unicode-width v0.2.2 target="unicode_width"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/unicode-width-e9010b3c0d0aeb7b/lib-unicode_width`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.303234463s  INFO prepare_target{force=false package_id=ratatui-crossterm v0.1.0 target="ratatui_crossterm"}: cargo::core::compiler::fingerprint: fingerprint error for ratatui-crossterm v0.1.0/Check { test: false }/TargetInner { ..: lib_target("ratatui_crossterm", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-crossterm-0.1.0/src/lib.rs", Edition2024) }
+   0.303244300s  INFO prepare_target{force=false package_id=ratatui-crossterm v0.1.0 target="ratatui_crossterm"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ratatui-crossterm-459b3fdf24bd2088/lib-ratatui_crossterm`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.303638287s  INFO prepare_target{force=false package_id=ratatui-macros v0.7.0 target="ratatui_macros"}: cargo::core::compiler::fingerprint: fingerprint error for ratatui-macros v0.7.0/Check { test: false }/TargetInner { ..: lib_target("ratatui_macros", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-macros-0.7.0/src/lib.rs", Edition2024) }
+   0.303648460s  INFO prepare_target{force=false package_id=ratatui-macros v0.7.0 target="ratatui_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ratatui-macros-77c2aa4175ab1002/lib-ratatui_macros`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.303969984s  INFO prepare_target{force=false package_id=ratatui-widgets v0.3.0 target="ratatui_widgets"}: cargo::core::compiler::fingerprint: fingerprint error for ratatui-widgets v0.3.0/Check { test: false }/TargetInner { ..: lib_target("ratatui_widgets", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ratatui-widgets-0.3.0/src/lib.rs", Edition2024) }
+   0.303980773s  INFO prepare_target{force=false package_id=ratatui-widgets v0.3.0 target="ratatui_widgets"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/ratatui-widgets-90c3130269947eb9/lib-ratatui_widgets`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.304430840s  INFO prepare_target{force=false package_id=line-clipping v0.3.7 target="line_clipping"}: cargo::core::compiler::fingerprint: fingerprint error for line-clipping v0.3.7/Check { test: false }/TargetInner { ..: lib_target("line_clipping", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/line-clipping-0.3.7/src/lib.rs", Edition2024) }
+   0.304440730s  INFO prepare_target{force=false package_id=line-clipping v0.3.7 target="line_clipping"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/line-clipping-9bd554d2867c60d5/lib-line_clipping`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.304644953s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint: fingerprint error for time v0.3.47/Check { test: false }/TargetInner { benched: false, ..: lib_target("time", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-0.3.47/src/lib.rs", Edition2024) }
+   0.304663212s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/time-96d5c46d789e7637/lib-time`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.304985747s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint: fingerprint error for deranged v0.5.8/Check { test: false }/TargetInner { ..: lib_target("deranged", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/deranged-0.5.8/src/lib.rs", Edition2021) }
+   0.304995525s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/deranged-167ef2846b1a4a8d/lib-deranged`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.305285442s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint: fingerprint error for powerfmt v0.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("powerfmt", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/powerfmt-0.2.0/src/lib.rs", Edition2021) }
+   0.305299494s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/powerfmt-6543f8f18f805450/lib-powerfmt`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: <unknown>
+  21: __libc_start_main
+  22: <unknown>
+   0.305514411s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint: fingerprint error for num-conv v0.2.1/Check { test: false }/TargetInner { ..: lib_target("num_conv", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-conv-0.2.1/src/lib.rs", Edition2021) }
+   0.305530454s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/num-conv-64f2c31abbb26ebb/lib-num_conv`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.305693163s  INFO prepare_target{force=false package_id=num_threads v0.1.7 target="num_threads"}: cargo::core::compiler::fingerprint: fingerprint error for num_threads v0.1.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("num_threads", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num_threads-0.1.7/src/lib.rs", Edition2015) }
+   0.305703166s  INFO prepare_target{force=false package_id=num_threads v0.1.7 target="num_threads"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/num_threads-34f7ad527658ceee/lib-num_threads`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.305909011s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint: fingerprint error for time-core v0.1.8/Check { test: false }/TargetInner { ..: lib_target("time_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.8/src/lib.rs", Edition2024) }
+   0.305925993s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/time-core-3d4f6b982d147812/lib-time_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: __libc_start_main
+  21: <unknown>
+   0.306122819s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/src/lib.rs", Edition2021) }
+   0.306132252s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/serde_json-515fe1bf6f292fea/lib-serde_json`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.306478681s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
+   0.306491244s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/serde_core-2551150412b68e10/lib-serde_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.306789069s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.306798497s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/serde_core-6e79afb355a0e11d/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.306900350s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for serde_core v1.0.228/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/build.rs", Edition2021) }
+   0.306908860s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.307311260s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/build.rs", Edition2021) }
+   0.307327733s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/serde_json-23addbb3ab3de8d7/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: __libc_start_main
+  19: <unknown>
+   0.307481157s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for serde_json v1.0.149/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/build.rs", Edition2021) }
+   0.307493965s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.307738928s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/src/lib.rs", Edition2021) }
+   0.307753550s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/zmij-fbd63395701cc634/lib-zmij`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.308122229s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.308134735s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/zmij-5ddec3b44d05f4be/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: __libc_start_main
+  20: <unknown>
+   0.308224715s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint dirty for zmij v1.0.21/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/build.rs", Edition2021) }
+   0.308235318s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="build-script-build"}: cargo::core::compiler::fingerprint:     dirty: ConfigSettingsChanged
+   0.308440724s  INFO prepare_target{force=false package_id=textwrap v0.16.2 target="textwrap"}: cargo::core::compiler::fingerprint: fingerprint error for textwrap v0.16.2/Check { test: false }/TargetInner { ..: lib_target("textwrap", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/textwrap-0.16.2/src/lib.rs", Edition2021) }
+   0.308450928s  INFO prepare_target{force=false package_id=textwrap v0.16.2 target="textwrap"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/textwrap-74d3bb851b173311/lib-textwrap`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: __libc_start_main
+  17: <unknown>
+   0.308752110s  INFO prepare_target{force=false package_id=smawk v0.3.2 target="smawk"}: cargo::core::compiler::fingerprint: fingerprint error for smawk v0.3.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("smawk", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/smawk-0.3.2/src/lib.rs", Edition2021) }
+   0.308765683s  INFO prepare_target{force=false package_id=smawk v0.3.2 target="smawk"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/smawk-b0fc640a868c1f6b/lib-smawk`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.308920431s  INFO prepare_target{force=false package_id=unicode-linebreak v0.1.5 target="unicode_linebreak"}: cargo::core::compiler::fingerprint: fingerprint error for unicode-linebreak v0.1.5/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("unicode_linebreak", ["lib"], "/home/levi/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/unicode-linebreak-0.1.5/src/lib.rs", Edition2021) }
+   0.308929961s  INFO prepare_target{force=false package_id=unicode-linebreak v0.1.5 target="unicode_linebreak"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/unicode-linebreak-1dbe2d9fbd7aa0a1/lib-unicode_linebreak`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: __libc_start_main
+  18: <unknown>
+   0.309155622s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint: fingerprint error for peep v0.1.0 (/home/levi/Projects/peep)/Check { test: true }/TargetInner { name: "peep", doc: true, ..: with_path("/home/levi/Projects/peep/src/main.rs", Edition2024) }
+   0.309167716s  INFO prepare_target{force=false package_id=peep v0.1.0 (/home/levi/Projects/peep) target="peep"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/levi/Projects/peep/target/debug/.fingerprint/peep-aaf37f00d77c8c92/test-bin-peep`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: <unknown>
+   1: <unknown>
+   2: <unknown>
+   3: <unknown>
+   4: <unknown>
+   5: <unknown>
+   6: <unknown>
+   7: <unknown>
+   8: <unknown>
+   9: <unknown>
+  10: <unknown>
+  11: <unknown>
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: __libc_start_main
+  16: <unknown>
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.45
+   Compiling libc v0.2.186
+    Checking cfg-if v1.0.4
+   Compiling rustversion v1.0.22
+   Compiling strsim v0.11.1
+    Checking foldhash v0.2.0
+   Compiling thiserror v2.0.18
+   Compiling ident_case v1.0.1
+    Checking bitflags v2.11.1
+    Checking allocator-api2 v0.2.21
+    Checking equivalent v1.0.2
+   Compiling syn v2.0.117
+    Checking hashbrown v0.16.1
+    Checking itoa v1.0.18
+    Checking once_cell v1.21.4
+    Checking unicode-width v0.2.2
+    Checking either v1.15.0
+   Compiling heck v0.5.0
+    Checking castaway v0.2.4
+    Checking itertools v0.14.0
+    Checking errno v0.3.14
+   Compiling instability v0.3.12
+   Compiling signal-hook v0.3.18
+   Compiling unicode-segmentation v1.13.2
+    Checking static_assertions v1.1.0
+   Compiling indoc v2.0.7
+   Compiling parking_lot_core v0.9.12
+    Checking ryu v1.0.23
+    Checking compact_str v0.9.0
+   Compiling convert_case v0.10.0
+    Checking signal-hook-registry v1.4.8
+    Checking lru v0.16.4
+    Checking unicode-truncate v2.0.1
+    Checking tracing-core v0.1.36
+    Checking scopeguard v1.2.0
+    Checking smallvec v1.15.1
+   Compiling rustix v1.1.4
+    Checking powerfmt v0.2.0
+    Checking log v0.4.29
+    Checking lazy_static v1.5.0
+    Checking sharded-slab v0.1.7
+    Checking mio v1.2.0
+    Checking deranged v0.5.8
+    Checking lock_api v0.4.14
+    Checking thread_local v1.1.9
+    Checking time-core v0.1.8
+    Checking memchr v2.8.0
+   Compiling darling_core v0.23.0
+   Compiling litrs v1.0.0
+   Compiling object v0.37.3
+    Checking num-conv v0.2.1
+    Checking num_threads v0.1.7
+    Checking linux-raw-sys v0.12.1
+    Checking pin-project-lite v0.2.17
+   Compiling owo-colors v4.3.0
+    Checking tracing v0.1.44
+   Compiling document-features v0.2.12
+    Checking time v0.3.47
+    Checking tracing-subscriber v0.3.23
+    Checking parking_lot v0.12.5
+    Checking signal-hook-mio v0.2.5
+    Checking line-clipping v0.3.7
+    Checking gimli v0.32.3
+   Compiling zmij v1.0.21
+   Compiling thiserror-impl v2.0.18
+   Compiling strum_macros v0.27.2
+   Compiling darling_macro v0.23.0
+   Compiling darling v0.23.0
+    Checking kasuari v0.4.12
+   Compiling derive_more-impl v2.1.1
+    Checking adler2 v2.0.1
+   Compiling eyre v0.6.12
+   Compiling color-spantrace v0.3.0
+   Compiling serde_core v1.0.228
+    Checking miniz_oxide v0.8.9
+    Checking addr2line v0.25.1
+    Checking tracing-error v0.2.1
+    Checking derive_more v2.1.1
+    Checking crossterm v0.29.0
+    Checking strum v0.27.2
+    Checking ratatui-core v0.1.0
+   Compiling serde_json v1.0.149
+    Checking rustc-demangle v0.1.27
+   Compiling anyhow v1.0.102
+    Checking indenter v0.3.4
+    Checking ratatui-widgets v0.3.0
+    Checking ratatui-crossterm v0.1.0
+    Checking unicode-linebreak v0.1.5
+    Checking smawk v0.3.2
+    Checking textwrap v0.16.2
+    Checking ratatui-macros v0.7.0
+    Checking ratatui v0.30.0
+    Checking backtrace v0.3.76
+    Checking color-eyre v0.6.5
     Checking peep v0.1.0 (/home/levi/Projects/peep)
-error: could not compile `peep` (bin "peep") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `peep` (bin "peep" test) due to 1 previous error
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 20.35s

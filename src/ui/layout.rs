@@ -4,7 +4,7 @@ pub fn areas(area: Rect) -> (Rect, Rect, Rect, Rect) {
     let [statbar, table, details, footer] = Layout::vertical([
         Constraint::Length(2),
         Constraint::Min(0),
-        Constraint::Length(4),
+        Constraint::Min(0),
         Constraint::Length(2),
     ])
     .areas(area);

@@ -5,6 +5,8 @@ pub enum AppAction {
     Quit,
     SelectUp,
     SelectDown,
+    ScrollUp,
+    ScrollDown,
     None,
 }
 
@@ -12,8 +14,11 @@ pub fn map_event(event: Event) -> AppAction {
     match event {
         Event::Key(key) if key.kind == KeyEventKind::Press => match key.code {
             KeyCode::Char('q') | KeyCode::Esc => AppAction::Quit,
-            KeyCode::Up | KeyCode::Char('k') => AppAction::SelectUp,
-            KeyCode::Down | KeyCode::Char('j') => AppAction::SelectDown,
+            KeyCode::Up => AppAction::SelectUp,
+            KeyCode::Down => AppAction::SelectDown,
+
+            KeyCode::Char('j') => AppAction::ScrollUp,
+            KeyCode::Char('k') => AppAction::ScrollDown,
             _ => AppAction::None,
         },
         _ => AppAction::None,

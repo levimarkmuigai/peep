@@ -2,20 +2,21 @@ use crossterm::event;
 use ratatui::widgets::TableState;
 
 use crate::{
-    cargo::parser::Diagnostic,
+    Recommendation,
     events::handler::{self, AppAction},
     tui::Tui,
     ui::{self, theme::Theme},
 };
 
 pub struct AppState {
-    pub items: Vec<Diagnostic>,
+    pub items: Vec<Recommendation>,
     pub table: TableState,
     pub should_quit: bool,
+    pub rec_scroll: u16,
 }
 
 impl AppState {
-    pub fn new(items: Vec<Diagnostic>) -> Self {
+    pub fn new(items: Vec<Recommendation>) -> Self {
         let mut table = TableState::default();
 
         if !items.is_empty() {
@@ -25,14 +26,30 @@ impl AppState {
             items,
             table,
             should_quit: false,
+            rec_scroll: 0,
         }
     }
 
     pub fn update(&mut self, action: AppAction) {
         match action {
-            AppAction::SelectUp => self.table.select_previous(),
-            AppAction::SelectDown => self.table.select_next(),
-            AppAction::Quit => self.should_quit = true,
+            AppAction::SelectUp => {
+                self.table.select_previous();
+                self.rec_scroll = 0;
+            }
+            AppAction::SelectDown => {
+                self.table.select_next();
+                self.rec_scroll = 0;
+            }
+            AppAction::Quit => {
+                self.should_quit = true;
+            }
+
+            AppAction::ScrollUp => {
+                self.rec_scroll = self.rec_scroll.saturating_sub(2);
+            }
+            AppAction::ScrollDown => {
+                self.rec_scroll = self.rec_scroll.saturating_sub(2);
+            }
             AppAction::None => {}
         }
     }
